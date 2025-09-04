@@ -1,0 +1,59 @@
+
+
+
+
+
+
+.footer {
+  background-color: #111;
+  color: gray;
+  padding: 40px 60px;
+}
+
+/* Social icons aligned left */
+.footer_top ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.footer_top li {
+  color: gray;
+  cursor: pointer;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.footer_top li:hover {
+  color: #e50914;
+}
+
+/* Links in 4 columns */
+.footer_links ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px 40px; /* row gap / column gap */
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer_links li {
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer_links li:hover {
+  color: #e50914;
+}
+
+/* Footer bottom text */
+.footer_bottom {
+  font-size: 12px;
+  color: gray;
+  margin-top: 20px;
+}
