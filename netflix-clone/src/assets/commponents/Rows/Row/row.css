@@ -1,0 +1,50 @@
+/* Row container */
+.row {
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 40px; /* space between rows */
+}
+
+/* Row title */
+.row__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Posters container: horizontal scroll */
+.row__posters {
+  display: flex;             /* horizontal layout */
+  overflow-x: scroll;        /* enable horizontal scroll */
+  overflow-y: hidden;        /* hide vertical scroll */
+  padding: 10px 0;
+  scroll-behavior: smooth;   /* smooth scrolling */
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Poster images */
+.row__poster {
+  max-height: 120px;         /* standard poster height */
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+/* Large poster variant for Netflix Originals */
+.row__posterLarge {
+  max-height: 250px;         /* taller poster */
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
