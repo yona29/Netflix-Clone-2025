@@ -22,7 +22,7 @@ const Banner = () => {
   }, []);
 
   // helper function to truncate description
-  function truncate(str, n) {
+  function abrivat(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
@@ -48,7 +48,7 @@ const Banner = () => {
         </div>
 
         {/* Description */}
-        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
+        <h1 className="banner_description">{abrivat(movie?.overview, 150)}</h1>
       </div>
 
       <div className="banner--fadeBottom" />
